@@ -109,3 +109,18 @@ document.addEventListener('DOMContentLoaded', function () {
     changeMusic();
 }); //ChatGPT prompt: kuidas lisada kellale funktsioon, 
     //kus kasutaja saab muuta lehel taustamuusikat spotify kaudu
+
+document.addEventListener("DOMContentLoaded", function () {
+    const clock = document.getElementById("clock");
+
+    clock.addEventListener("click", function () {
+        // Genereerib juhusliku värvi
+        let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        clock.style.color = randomColor;
+    });
+}); //ChatGPT prompt: kellale klõpsates muudab kell värvi
+
+//ideid veel:
+// 1. lisa romeo ja juliet'i tsitaat, mis vahetub iga kord kui leht laeb
+// 2. lisa romeo ja julieti anime kujud, nupule (mürk *kuri naer*) vajutades nad langevad ehk surevad
+// 3. täistunnil juhtub midagi, nt ekraanile tuleb korraks suurelt kiri "tee *täistunniga võrdne arv* korda plaksu"
