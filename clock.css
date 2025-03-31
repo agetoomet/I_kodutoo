@@ -1,0 +1,111 @@
+/* Laaditud Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Joti+One&display=swap');
+
+/* Üldised stiilid */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("romeo_juliet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#container {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 35%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 35%;
+    max-height: 50%;
+}
+
+#clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Joti One", serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#author {
+    font-family: "Felipa", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#hours, #minutes, #seconds {
+    font-family: "Joti One", serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#day, #date {
+    font-family: "Felipa", serif;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#runaway-btn {
+    background-color: antiquewhite;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Joti One", serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.2s ease;
+    /* Initial position will be set by JavaScript */
+}
+
+#music-controls {
+    margin-top: 20px;
+    text-align: center;
+} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
+
+#music-select, #play-music {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
+
+#play-music {
+    background-color: peachpuff;
+    color: black;
+    font-weight: bold;
+} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
+
+select {
+    font-family: "Joti One", serif;
+    font-size: 18px;
+    color: #333;
+    background-color: antiquewhite;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+} /*ChatGPT prompt: kuidas options teksti fonti muuta*/
+
+option {
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 16px;
+    color: black;
+    background-color: white;
+} /*ChatGPT prompt: kuidas options teksti fonti muuta*/
