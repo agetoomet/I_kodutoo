@@ -3,7 +3,7 @@
 ### Lehe autor on Age Toomet
 
 ## Ekraanipilt lehest
-![Ekraanipilt Age Toometi Romeo ja Julia teemalisest funktsionaalsest lauakellast](screenshot-clock.png)
+![Ekraanipilt Age Toometi Romeo ja Julia teemalisest funktsionaalsest lauakellast](screenshot-clock2.png)
 
 ## Funktsionaalsus
 * Klõpsates kella numbritele, saab muuta selle värvust - tuleb juhuslik värv.
