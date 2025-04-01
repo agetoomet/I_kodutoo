@@ -104,8 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     positionButtonRandomly();
-}); //ChatGPT prompt: i want to make a code where a clickable button 
-    // "runs away" when you move the cursor to click it
+}); //ChatGPT laenatud
 
 document.addEventListener('DOMContentLoaded', function () {
     const musicSelect = document.getElementById('music-select');
@@ -118,8 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     musicSelect.addEventListener('change', changeMusic);
     changeMusic();
-}); //ChatGPT prompt: kuidas lisada kellale funktsioon, 
-    //kus kasutaja saab muuta lehel taustamuusikat spotify kaudu
+}); //ChatGPT laenatud
 
 document.addEventListener("DOMContentLoaded", function () {
     const clock = document.getElementById("clock");
@@ -128,12 +126,11 @@ document.addEventListener("DOMContentLoaded", function () {
         let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
         clock.style.color = randomColor;
     });
-}); //ChatGPT prompt: kellale klõpsates muudab kell värvi
+}); //ChatGPT laenatud
 
 document.addEventListener("DOMContentLoaded", function () {
     const quoteElement = document.getElementById("quote");
 
-    // Tsitaadid massiivis
     const quotes = [
         '"O Romeo, Romeo! wherefore art thou Romeo?"',
         '"Good night, good night! Parting is such sweet sorrow, that I shall say good night till it be morrow."',
@@ -142,17 +139,15 @@ document.addEventListener("DOMContentLoaded", function () {
         '"Wisely and slow; they stumble that run fast."'
     ];
 
-    // Kui tsitaadile klõpsatakse, valib uue juhusliku tsitaadi
     quoteElement.addEventListener("click", function () {
         let randomIndex = Math.floor(Math.random() * quotes.length);
         quoteElement.textContent = quotes[randomIndex];
     });
-}); //ChatGPT prompt: kuidas lisada romeo ja julieti tsitaat,
-    // mis vahetub iga kord kui kasutaja sellele vajutab
+}); //ChatGPT laenatud
 
 document.getElementById("falling-roses-btn").addEventListener("click", function () {
-    for (let i = 0; i < 15; i++) { // Loome 15 roosilehte korraga
-        setTimeout(createRose, i * 300); // Tekitame neid ajavahega
+    for (let i = 0; i < 15; i++) { 
+        setTimeout(createRose, i * 300); 
     }
 });
 
@@ -160,8 +155,8 @@ function createRose() {
     let rose = document.createElement("div");
     rose.classList.add("rose");
 
-    let startPosX = Math.random() * window.innerWidth; // Juhuslik horisontaalne asukoht
-    let duration = 4 + Math.random() * 3; // Roos langeb 4-7 sekundi jooksul
+    let startPosX = Math.random() * window.innerWidth; 
+    let duration = 4 + Math.random() * 3; 
 
     rose.style.left = startPosX + "px";
     rose.style.animationDuration = duration + "s";
@@ -169,28 +164,25 @@ function createRose() {
     document.getElementById("rose-container").appendChild(rose);
 
     setTimeout(() => {
-        rose.remove(); // Eemaldab roosilehe pärast animatsiooni lõppu
+        rose.remove(); 
     }, duration * 1000);
-}   //ChatGPT prompt: lisa containerist väljaspoole selle
-    //alla keskele nupp, millele vajutades hakkab alla sadama roosilehti
+}   //ChatGPT laenatud
 
 document.addEventListener("DOMContentLoaded", function () {
     const fallButton = document.getElementById("fall-button");
     const romeo = document.getElementById("romeo");
     const juliet = document.getElementById("juliet");
 
-    let isFallen = false; // Kontrollib, kas nad on juba pikali
+    let isFallen = false; //ChatGPT laenatud
 
     fallButton.addEventListener("click", function () {
         if (!isFallen) {
             romeo.style.transform = "rotate(90deg)";
             juliet.style.transform = "rotate(-90deg)";
         } else {
-            romeo.style.transform = "rotate(0deg)"; // Tõstab tagasi püsti
+            romeo.style.transform = "rotate(0deg)"; 
             juliet.style.transform = "rotate(0deg)";
         }
         isFallen = !isFallen;
     });
-}); //ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
-    //ja pilt juliast ning containerisse nupp, millele vajutades 
-    //kukuvad romeo ja julia pikali
+}); //ChatGPT laenatud

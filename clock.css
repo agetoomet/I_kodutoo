@@ -67,13 +67,12 @@ body {
     cursor: pointer;
     position: absolute;
     transition: all 0.2s ease;
-    /* Initial position will be set by JavaScript */
 }
 
 #music-controls {
     margin-top: 15px;
     text-align: center;
-} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
+} /* ChatGPT laenatud*/
 
 #music-select, #play-music {
     padding: 10px;
@@ -82,7 +81,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
+} /* ChatGPT laenatud*/
 
 #play-music {
     background-color: peachpuff;
@@ -90,7 +89,7 @@ body {
     font-weight: bold;
     font-size: 12px;
     width: 100%;
-} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
+} /* ChatGPT laenatud*/
 
 select {
     font-family: "Joti One", serif;
@@ -100,14 +99,14 @@ select {
     border: 1px solid #ccc;
     padding: 5px;
     border-radius: 5px;
-} /*ChatGPT prompt: kuidas options teksti fonti muuta*/
+} /* ChatGPT laenatud*/
 
 option {
     font-family: 'Times New Roman', Times, serif; 
     font-size: 16px;
     color: black;
     background-color: white;
-} /*ChatGPT prompt: kuidas options teksti fonti muuta*/
+} /* ChatGPT laenatud*/
 
 #quote {
     font-family: "Joti One", serif;
@@ -125,8 +124,7 @@ option {
     border-radius: 8px;
     cursor: pointer;
     z-index: 10; 
-} /*ChatGPT prompt: aseta romeo ja julia tsitaadid containerist välja, 
-    aga lehel visuaalselt selle peale*/
+} /* ChatGPT laenatud*/
 
 #falling-roses-btn {
     background-color: crimson;
@@ -143,8 +141,7 @@ option {
     bottom: 3%;
     left: 50%; 
     transform: translateX(-50%);
-} /*ChatGPT prompt: lisa containerist väljaspoole selle
-alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
+} /* ChatGPT laenatud*/
 
 #falling-roses-btn:hover {
     background-color: darkred;
@@ -158,8 +155,7 @@ alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
     height: 100%;
     pointer-events: none; 
     overflow: hidden;
-} /*ChatGPT prompt: lisa containerist väljaspoole selle
-alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
+} /* ChatGPT laenatud*/
 
 .rose {
     position: absolute;
@@ -169,8 +165,7 @@ alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
     background-size: cover;
     opacity: 0.8;
     animation: fall linear infinite;
-} /*ChatGPT prompt: lisa containerist väljaspoole selle
-alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
+} /* ChatGPT laenatud*/
 
 @keyframes fall {
     0% {
@@ -181,8 +176,7 @@ alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
         transform: translateY(100vh) rotate(360deg);
         opacity: 0;
     }
-} /*ChatGPT prompt: lisa containerist väljaspoole selle
-    alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
+} /* ChatGPT laenatud*/
 
 #characters {
     position: fixed;
@@ -190,19 +184,15 @@ alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
     left: 10px;
     display: flex;
     gap: 10px;
-} /* ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
-    ja pilt juliast ning containerisse nupp, millele vajutades 
-    kukuvad romeo ja julia pikali*/
+} /* ChatGPT laenatud*/
 
 #characters img {
     width: 100px; /* Muuda vastavalt vajadusele */
     transition: transform 1s ease-in-out;
-}   /* ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
-    ja pilt juliast ning containerisse nupp, millele vajutades 
-    kukuvad romeo ja julia pikali*/
+}   /* ChatGPT laenatud*/
 
 #fall-button {
-    margin-top: 15px; /* Lisab vahe muusikapleieriga */
+    margin-top: 15px; 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -214,12 +204,20 @@ alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
     color: white;
     border: none;
     border-radius: 5px;
-} /* ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
-    ja pilt juliast ning containerisse nupp, millele vajutades 
-    kukuvad romeo ja julia pikali*/
+} /* ChatGPT laenatud*/
 
 #fall-button:hover {
     background-color: darkred;
-} /* ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
-    ja pilt juliast ning containerisse nupp, millele vajutades 
-    kukuvad romeo ja julia pikali*/
+} 
+
+#hyperlink {
+    color: red;
+} 
+
+#hyperlink:hover {
+    color: darkred;
+} 
+
+#hyperlink:visited {
+    color: darkred;
+}
