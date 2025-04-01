@@ -1,6 +1,6 @@
 # 1-kodutoo
 
-## Lehe autor on Age Toomet
+### Lehe autor on Age Toomet
 
 ## Ekraanipilt lehest
 ![Ekraanipilt Age Toometi Romeo ja Julia teemalisest funktsionaalsest lauakellast](screenshot-clock.png)
