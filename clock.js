@@ -104,7 +104,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     positionButtonRandomly();
-}); //ChatGPT laenatud
+}); //ChatGPT prompt: i want to make a code where a clickable button 
+// "runs away" when you move the cursor to click it
 
 document.addEventListener('DOMContentLoaded', function () {
     const musicSelect = document.getElementById('music-select');
@@ -117,7 +118,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     musicSelect.addEventListener('change', changeMusic);
     changeMusic();
-}); //ChatGPT laenatud
+}); //ChatGPT prompt: kuidas lisada kellale funktsioon, 
+//kus kasutaja saab muuta lehel taustamuusikat spotify kaudu
 
 document.addEventListener("DOMContentLoaded", function () {
     const clock = document.getElementById("clock");
@@ -126,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
         clock.style.color = randomColor;
     });
-}); //ChatGPT laenatud
+}); //ChatGPT prompt: kellale klõpsates muudab kell värvi
 
 document.addEventListener("DOMContentLoaded", function () {
     const quoteElement = document.getElementById("quote");
@@ -143,13 +145,15 @@ document.addEventListener("DOMContentLoaded", function () {
         let randomIndex = Math.floor(Math.random() * quotes.length);
         quoteElement.textContent = quotes[randomIndex];
     });
-}); //ChatGPT laenatud
+}); //ChatGPT prompt: kuidas lisada romeo ja julieti tsitaat,
+// mis vahetub iga kord kui kasutaja sellele vajutab
 
 document.getElementById("falling-roses-btn").addEventListener("click", function () {
     for (let i = 0; i < 15; i++) { 
         setTimeout(createRose, i * 300); 
     }
-});
+}); //ChatGPT prompt: lisa containerist väljaspoole selle
+//alla keskele nupp, millele vajutades hakkab alla sadama roosilehti
 
 function createRose() {
     let rose = document.createElement("div");
@@ -166,14 +170,15 @@ function createRose() {
     setTimeout(() => {
         rose.remove(); 
     }, duration * 1000);
-}   //ChatGPT laenatud
+}  //ChatGPT prompt: lisa containerist väljaspoole selle
+//alla keskele nupp, millele vajutades hakkab alla sadama roosilehti
 
 document.addEventListener("DOMContentLoaded", function () {
     const fallButton = document.getElementById("fall-button");
     const romeo = document.getElementById("romeo");
     const juliet = document.getElementById("juliet");
 
-    let isFallen = false; //ChatGPT laenatud
+    let isFallen = false; 
 
     fallButton.addEventListener("click", function () {
         if (!isFallen) {
@@ -185,4 +190,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         isFallen = !isFallen;
     });
-}); //ChatGPT laenatud
+}); //ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
+//ja pilt juliast ning containerisse nupp, millele vajutades 
+//kukuvad romeo ja julia pikali

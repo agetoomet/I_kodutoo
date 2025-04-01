@@ -67,12 +67,13 @@ body {
     cursor: pointer;
     position: absolute;
     transition: all 0.2s ease;
-}
+} /*ChatGPT prompt: i want to make a code where a clickable button 
+"runs away" when you move the cursor to click it*/
 
 #music-controls {
     margin-top: 15px;
     text-align: center;
-} /* ChatGPT laenatud*/
+} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
 
 #music-select, #play-music {
     padding: 10px;
@@ -81,7 +82,7 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-} /* ChatGPT laenatud*/
+} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
 
 #play-music {
     background-color: peachpuff;
@@ -89,7 +90,7 @@ body {
     font-weight: bold;
     font-size: 12px;
     width: 100%;
-} /* ChatGPT laenatud*/
+} /*ChatGPT prompt: kuidas lisada kellale funktsioon, kus kasutaja saab muuta lehel taustamuusikat*/
 
 select {
     font-family: "Joti One", serif;
@@ -99,14 +100,14 @@ select {
     border: 1px solid #ccc;
     padding: 5px;
     border-radius: 5px;
-} /* ChatGPT laenatud*/
+} 
 
 option {
     font-family: 'Times New Roman', Times, serif; 
     font-size: 16px;
     color: black;
     background-color: white;
-} /* ChatGPT laenatud*/
+} 
 
 #quote {
     font-family: "Joti One", serif;
@@ -124,7 +125,8 @@ option {
     border-radius: 8px;
     cursor: pointer;
     z-index: 10; 
-} /* ChatGPT laenatud*/
+} /*ChatGPT prompt: aseta romeo ja julia tsitaadid containerist välja, 
+aga lehel visuaalselt selle peale*/
 
 #falling-roses-btn {
     background-color: crimson;
@@ -141,7 +143,8 @@ option {
     bottom: 3%;
     left: 50%; 
     transform: translateX(-50%);
-} /* ChatGPT laenatud*/
+} /*ChatGPT prompt: lisa containerist väljaspoole selle
+alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
 
 #falling-roses-btn:hover {
     background-color: darkred;
@@ -155,7 +158,8 @@ option {
     height: 100%;
     pointer-events: none; 
     overflow: hidden;
-} /* ChatGPT laenatud*/
+} /*ChatGPT prompt: lisa containerist väljaspoole selle
+alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
 
 .rose {
     position: absolute;
@@ -165,7 +169,8 @@ option {
     background-size: cover;
     opacity: 0.8;
     animation: fall linear infinite;
-} /* ChatGPT laenatud*/
+} /*ChatGPT prompt: lisa containerist väljaspoole selle
+alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
 
 @keyframes fall {
     0% {
@@ -176,7 +181,8 @@ option {
         transform: translateY(100vh) rotate(360deg);
         opacity: 0;
     }
-} /* ChatGPT laenatud*/
+} /*ChatGPT prompt: lisa containerist väljaspoole selle
+alla keskele nupp, millele vajutades hakkab alla sadama roosilehti*/
 
 #characters {
     position: fixed;
@@ -184,12 +190,16 @@ option {
     left: 10px;
     display: flex;
     gap: 10px;
-} /* ChatGPT laenatud*/
+} /* ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
+ja pilt juliast ning containerisse nupp, millele vajutades 
+kukuvad romeo ja julia pikali*/
 
 #characters img {
     width: 100px; /* Muuda vastavalt vajadusele */
     transition: transform 1s ease-in-out;
-}   /* ChatGPT laenatud*/
+}   /* ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
+ja pilt juliast ning containerisse nupp, millele vajutades 
+kukuvad romeo ja julia pikali*/
 
 #fall-button {
     margin-top: 15px; 
@@ -204,7 +214,9 @@ option {
     color: white;
     border: none;
     border-radius: 5px;
-} /* ChatGPT laenatud*/
+} /* ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
+ja pilt juliast ning containerisse nupp, millele vajutades 
+kukuvad romeo ja julia pikali*/
 
 #fall-button:hover {
     background-color: darkred;
