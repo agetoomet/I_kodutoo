@@ -6,8 +6,27 @@ s = document.getElementById('seconds');
 weekDay = document.getElementById('day');
 
 dateElement = document.getElementById('date');
-let monthNames =["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli", "august", "september", "oktoober", "november", "detsember"];
-let weekDaysNames = ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
+let monthNames =[
+    "jaanuar", 
+    "veebruar", 
+    "märts", 
+    "aprill", 
+    "mai", 
+    "juuni", 
+    "juuli", 
+    "august", 
+    "september", 
+    "oktoober", 
+    "november", 
+    "detsember"];
+let weekDaysNames = [
+    "Pühapäev", 
+    "Esmaspäev", 
+    "Teisipäev", 
+    "Kolmapäev", 
+    "Neljapäev", 
+    "Reede", 
+    "Laupäev"];
 
 
 function updateClock(){
@@ -44,8 +63,7 @@ updateClock();
 
 document.addEventListener('DOMContentLoaded', function () {
     const button = document.getElementById('runaway-btn');
-    
-    // Tagastab ekraani mõõtmed, et nupp saaks liikuda tervele ekraanile
+
     function getScreenBounds() {
         return {
             left: 0,
@@ -55,27 +73,22 @@ document.addEventListener('DOMContentLoaded', function () {
         };
     }
 
-    // Arvutab kahe punkti vahelise kauguse
     function getDistance(x1, y1, x2, y2) {
         return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     }
 
-    // Kui hiir läheneb nupule, see põgeneb
     document.addEventListener('mousemove', function (e) {
         const buttonRect = button.getBoundingClientRect();
         const buttonX = buttonRect.left + buttonRect.width / 2;
         const buttonY = buttonRect.top + buttonRect.height / 2;
 
-        // Arvutab hiire ja nupu keskkoha vahelise kauguse
         const distance = getDistance(e.clientX, e.clientY, buttonX, buttonY);
 
-        // Kui hiir tuleb alla 150px kaugusele, nupp põgeneb
         if (distance < 150) {
             moveButton();
         }
     });
 
-    // Liigutab nuppu juhuslikule positsioonile ekraanil
     function moveButton() {
         const bounds = getScreenBounds();
         const newX = Math.random() * (bounds.right - bounds.left) + bounds.left;
@@ -85,14 +98,14 @@ document.addEventListener('DOMContentLoaded', function () {
         button.style.top = newY + 'px';
     }
 
-    // Seadistab nupu algpositsiooni suvaliselt ekraanile
     function positionButtonRandomly() {
         moveButton();
     }
 
-    // Seadista nupp kohe juhuslikule kohale
+
     positionButtonRandomly();
-});
+}); //ChatGPT prompt: i want to make a code where a clickable button 
+    // "runs away" when you move the cursor to click it
 
 document.addEventListener('DOMContentLoaded', function () {
     const musicSelect = document.getElementById('music-select');
@@ -104,8 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     musicSelect.addEventListener('change', changeMusic);
-
-    // Seadista vaikimisi esimene lugu
     changeMusic();
 }); //ChatGPT prompt: kuidas lisada kellale funktsioon, 
     //kus kasutaja saab muuta lehel taustamuusikat spotify kaudu
@@ -114,13 +125,72 @@ document.addEventListener("DOMContentLoaded", function () {
     const clock = document.getElementById("clock");
 
     clock.addEventListener("click", function () {
-        // Genereerib juhusliku värvi
         let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
         clock.style.color = randomColor;
     });
 }); //ChatGPT prompt: kellale klõpsates muudab kell värvi
 
-//ideid veel:
-// 1. lisa romeo ja juliet'i tsitaat, mis vahetub iga kord kui leht laeb
-// 2. lisa romeo ja julieti anime kujud, nupule (mürk *kuri naer*) vajutades nad langevad ehk surevad
-// 3. täistunnil juhtub midagi, nt ekraanile tuleb korraks suurelt kiri "tee *täistunniga võrdne arv* korda plaksu"
+document.addEventListener("DOMContentLoaded", function () {
+    const quoteElement = document.getElementById("quote");
+
+    // Tsitaadid massiivis
+    const quotes = [
+        '"O Romeo, Romeo! wherefore art thou Romeo?"',
+        '"Good night, good night! Parting is such sweet sorrow, that I shall say good night till it be morrow."',
+        '"My bounty is as boundless as the sea, my love as deep; the more I give to thee, the more I have, for both are infinite."',
+        '"These violent delights have violent ends..."',
+        '"Wisely and slow; they stumble that run fast."'
+    ];
+
+    // Kui tsitaadile klõpsatakse, valib uue juhusliku tsitaadi
+    quoteElement.addEventListener("click", function () {
+        let randomIndex = Math.floor(Math.random() * quotes.length);
+        quoteElement.textContent = quotes[randomIndex];
+    });
+}); //ChatGPT prompt: kuidas lisada romeo ja julieti tsitaat,
+    // mis vahetub iga kord kui kasutaja sellele vajutab
+
+document.getElementById("falling-roses-btn").addEventListener("click", function () {
+    for (let i = 0; i < 15; i++) { // Loome 15 roosilehte korraga
+        setTimeout(createRose, i * 300); // Tekitame neid ajavahega
+    }
+});
+
+function createRose() {
+    let rose = document.createElement("div");
+    rose.classList.add("rose");
+
+    let startPosX = Math.random() * window.innerWidth; // Juhuslik horisontaalne asukoht
+    let duration = 4 + Math.random() * 3; // Roos langeb 4-7 sekundi jooksul
+
+    rose.style.left = startPosX + "px";
+    rose.style.animationDuration = duration + "s";
+
+    document.getElementById("rose-container").appendChild(rose);
+
+    setTimeout(() => {
+        rose.remove(); // Eemaldab roosilehe pärast animatsiooni lõppu
+    }, duration * 1000);
+}   //ChatGPT prompt: lisa containerist väljaspoole selle
+    //alla keskele nupp, millele vajutades hakkab alla sadama roosilehti
+
+document.addEventListener("DOMContentLoaded", function () {
+    const fallButton = document.getElementById("fall-button");
+    const romeo = document.getElementById("romeo");
+    const juliet = document.getElementById("juliet");
+
+    let isFallen = false; // Kontrollib, kas nad on juba pikali
+
+    fallButton.addEventListener("click", function () {
+        if (!isFallen) {
+            romeo.style.transform = "rotate(90deg)";
+            juliet.style.transform = "rotate(-90deg)";
+        } else {
+            romeo.style.transform = "rotate(0deg)"; // Tõstab tagasi püsti
+            juliet.style.transform = "rotate(0deg)";
+        }
+        isFallen = !isFallen;
+    });
+}); //ChatGPT prompt: lisa veebilehe vasakusse alumisse serva pilt romeost 
+    //ja pilt juliast ning containerisse nupp, millele vajutades 
+    //kukuvad romeo ja julia pikali
