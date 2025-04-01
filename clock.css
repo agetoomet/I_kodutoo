@@ -210,14 +210,15 @@ option {
     background-color: darkred;
 } 
 
-#hyperlink {
+a {
+    text-decoration: none;
     color: red;
 } 
 
-#hyperlink:hover {
+a:hover {
     color: darkred;
 } 
 
-#hyperlink:visited {
+a:visited {
     color: darkred;
 }
