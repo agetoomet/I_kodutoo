@@ -135,8 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const quotes = [
         '"O Romeo, Romeo! wherefore art thou Romeo?"',
-        '"Good night, good night! Parting is such sweet sorrow, that I shall say good night till it be morrow."',
-        '"My bounty is as boundless as the sea, my love as deep; the more I give to thee, the more I have, for both are infinite."',
+        '"It is the east, and Juliet is the sun."',
+        '"Mercy but murders, pardoning those that kill.."',
         '"These violent delights have violent ends..."',
         '"Wisely and slow; they stumble that run fast."'
     ];
